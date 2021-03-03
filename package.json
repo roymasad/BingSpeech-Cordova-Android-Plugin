@@ -1,0 +1,34 @@
+{
+  "_from": "git+https://github.com/roymasad/BingSpeech-Cordova-Android-Plugin.git",
+  "_id": "bingspeech-cordova-android-plugin@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-F2vKkcUMXptXFWq086wShBZgOW0=",
+  "_location": "/bingspeech-cordova-android-plugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/roymasad/BingSpeech-Cordova-Android-Plugin",
+    "rawSpec": "https://github.com/roymasad/BingSpeech-Cordova-Android-Plugin",
+    "saveSpec": "git+https://github.com/roymasad/BingSpeech-Cordova-Android-Plugin.git",
+    "fetchSpec": "https://github.com/roymasad/BingSpeech-Cordova-Android-Plugin.git",
+    "gitCommittish": "master"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/roymasad/BingSpeech-Cordova-Android-Plugin.git",
+  "_spec": "https://github.com/roymasad/BingSpeech-Cordova-Android-Plugin",
+  "_where": "C:\\Code\\Ionic\\Speech",
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "bingspeech-cordova-android-plugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Bing Speech Cordova Android Plugin",
+  "name": "bingspeech-cordova-android-plugin",
+  "version": "0.0.1"
+}

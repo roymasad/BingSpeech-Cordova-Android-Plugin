@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android" id="bingspeech-cordova-plugin" version="0.0.1"
+    id="bingspeech-cordova-android-plugin"
+    version="0.0.1">
+    <name>Bing Speech Cordova Android Plugin</name>
+    <description>Bing Speech Cordova Android Plugin</description>
+    <license>MIT</license>
+    <description>cordova,speech,recognition,android,bing</description>
+    <repo>https://github.com/roymasad/BingSpeech-Cordova-Android-Plugin</repo>
+
+
+    <!-- android -->
+    <platform name="android">
+      <js-module src="www/bingspeech.js" name="plugin">
+        <runs/>
+
+        <!-- This is the window variable name you want, like window.MyCordovaPlugin -->
+        <clobbers target="BingSpeechPlugin" />
+      </js-module>
+      <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="BingSpeechPlugin">
+          <param name="android-package" value="com.roymasad.BingSpeechPlugin" />
+          <param name="onload" value="true" />
+        </feature>
+      </config-file>
+	  
+	      <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+            <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+        </config-file>
+	  
+	  <framework src="custom.gradle" custom="true" type="gradleReference" />
+
+    <resource-file src="libs/speechrecognition-1.2.2.aar" target="libs/speechrecognition-1.2.2.aar" />
+  
+    <source-file src="libs/armeabi/libandroid_platform.so" target-dir="lib/armeabi/" />
+
+    <source-file src="src/android/com/roymasad/BingSpeechPlugin.java" target-dir="src/com/roymasad/" />
+	
+	  
+    </platform>
+ 
+</plugin>

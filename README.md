@@ -17,7 +17,7 @@ This is an ionic cordova/ionic plugin for the Bing speech recognition library
 
 -No IOS support, can be added
 
--You need to manually set the Bing cloud key in the bingspeachplugin.java file
+-You need to manually set the Bing cloud key in the bingspeachplugin.java file.
 This should be improved to pass it as a parameter to the plugin instead of being hardcoded
 
 -Last tested in 2018
